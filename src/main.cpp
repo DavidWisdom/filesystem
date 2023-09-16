@@ -105,11 +105,11 @@ int main() {
                     std::cout << "dir: too many arguments" << std::endl;
                 }
             } else if (args[1] == "md") {
-                for (int i = 1; i < (int)args.size(); i++) md(args[i]);
+                for (int i = 2; i < (int)args.size(); i++) md(args[i]);
             } else if (args[1] == "rd") {
-                for (int i = 1; i < (int)args.size(); i++) rd(args[i]);
+                for (int i = 2; i < (int)args.size(); i++) rd(args[i]);
             } else if (args[1] == "newfile") {
-                for (int i = 1; i < (int)args.size(); i++) newfile(args[i]);
+                for (int i = 2; i < (int)args.size(); i++) newfile(args[i]);
             } else if (args[1] == "cat") {
                 if (args.size() == 3) {
                     cat(args[2]);
@@ -118,7 +118,7 @@ int main() {
                 }
             } else if (args[1] == "copy") copy(args[2]);
             else if (args[1] == "del") {
-                for (int i = 1; i < (int)args.size(); i++) del(args[i]);
+                for (int i = 2; i < (int)args.size(); i++) del(args[i]);
             }
             else if (args[1] == "check") check();
             // else if (args[1] == "clear") clear();
