@@ -3,7 +3,12 @@
 
 # 如何编译运行
 
- 在Linux系统上clone本项目，并使用`make`命令即可编译运行本项目
+ 在Linux系统上clone本项目，并使用以下命令即可编译运行本项目：
+
+```shell
+make
+./program
+```
 
 # 目前支持的命令
 
